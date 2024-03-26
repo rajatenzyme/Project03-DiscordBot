@@ -2,6 +2,9 @@ const {Client, GatewayIntentBits} = require('discord.js')
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] }); 
 
+const DiscordToken = "your-token-here"
+const CLIENT_ID = "your-clientid-here"
+
 client.on('messageCreate', (message) => {
     console.log(message.content);
     if(message.author.bot)

@@ -1,5 +1,8 @@
 // Code for registering a command in Discord
 
+const DiscordToken = "your-token-here"
+const CLIENT_ID = "your-clientid-here"
+
 const { REST, Routes }  = require('discord.js');
 
 
